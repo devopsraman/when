@@ -23,11 +23,9 @@ pipeline {
             }
         }
         stage('Deploy for production') {
-            when { anyof { branch 'production'; branch 'sprint*/release'} }
-            
-
+            when {
+                branch 'production'  
             }
-
             steps {
                 echo 'Hello production'
             }
