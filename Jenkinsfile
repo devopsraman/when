@@ -14,7 +14,7 @@ pipeline {
                 branch 'master' 
             }
             steps {
-                echo 'Hello Test'
+                echo 'Hello Test1'
             }
         }
         stage('Deliver for development') {
