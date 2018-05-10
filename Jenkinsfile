@@ -10,6 +10,9 @@ pipeline {
             }
         }
         stage('Test') {
+             when {
+                branch 'master' 
+            }
             steps {
                 echo 'Hello Test'
             }
