@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Deploy for production') {
             when { 
-                anyOf { branch 'production'; branch 'sprint*/*'} 
+                anyOf { branch 'production'; branch 'sprint*/*'; branch 'master'} 
             }
 
             steps {
