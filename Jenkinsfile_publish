@@ -19,7 +19,7 @@ pipeline {
                 branch 'master' 
             }
             steps {
-                echo 'Hello master branch'
+                echo 'Hello master branch for jenkinsfile'
             }
         }
         stage('Deploy for production') {
